@@ -28,8 +28,14 @@
     <section id="projects">
         <h2>Featured Projects:</h2>
 
+        <div class="project-filters" role="group" aria-label="Project Filters">
+            <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn" data-filter="html-css" aria-pressed="false">HTML/CSS</button>
+            <button type="button" class="filter-btn" data-filter="javascript" aria-pressed="false">JavaScript</button>
+        </div>
+
         <div class="project-grid">
-        <article class="project-card">
+        <article class="project-card" data-category="html-css javascript">
             <h3>River Book Swap</h3>
             <p>A responsive landing page for a fictional 
                book exchange, built with HTML, CSS, and JavaScript.
@@ -37,7 +43,7 @@
             <p>Technologies: HTML, CSS, JavaScript</p>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-category="html-css">
             <h3>PCA Player Profile Card</h3>
             <p>A responsive player profile card featuring
                Chicago Cubs player Pete Crow-Armstrong, built with HTML and CSS.
@@ -108,6 +114,6 @@
 <footer>
     <p>My Professional Portfolio</p>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html> 

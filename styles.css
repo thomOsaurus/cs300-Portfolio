@@ -129,3 +129,36 @@ nav a:focus-visible {
     color: #0066ff;
     text-decoration: underline;
 }
+
+/* Project Filter Buttons */
+.project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px 0;
+}
+.filter-btn {
+    background-color: var(--card-color);
+    color: var(--text-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+.filter-btn:focus-visible {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+/* Keep the selected filter highlighted */
+.filter-btn[aria-pressed="true"] {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    font-weight: bold;
+}
