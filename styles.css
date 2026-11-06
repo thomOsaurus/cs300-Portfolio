@@ -86,3 +86,46 @@ nav a:focus-visible {
 .project-card p {
     color: var(--text-color);
 }
+
+/* Technical Skills List */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: var(--card-color);
+    color: var(--text-color);
+    padding: 12px 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+}   
+
+/* Resume Button */
+.resume-btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid var(--accent-color);
+}
+
+.resume-btn:hover,
+.resume-btn:focus-visible {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    
+}
+
+/* Contact Form Styles */
+#contact a,
+#contact a:visited {
+    color: #0066ff;
+    text-decoration: underline;
+}
