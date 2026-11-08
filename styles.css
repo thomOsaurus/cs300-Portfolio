@@ -194,6 +194,21 @@ nav a:focus-visible {
         grid-template-columns: 1fr;
     }
 
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        padding: 6px 5px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
     
     
 }
@@ -208,3 +223,18 @@ h1 {
     text-align: center;
     line-height: 1.8;
 }           
+
+/* Improvement 2 */
+nav a {
+    display: inline-block;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 4px;
+    text-decoration: none;
+}
+
+/* Improvement 2: footer spacing*/
+footer {
+    padding-left: 30px;
+}
